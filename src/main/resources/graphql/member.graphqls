@@ -1,0 +1,35 @@
+type Member {
+    id: Int,
+    name: String,
+    nickName: String,
+    team: Team,
+    position: Position
+}
+
+type Team{
+    id: Int,
+    name: TeamName,
+    group: Group
+}
+
+enum TeamName {
+    VERTICAL_LAB, CONTENTS_LAB, TRADE_LAB
+}
+
+enum Group {
+    CEO, CFO, CPO, CRO, CTO
+}
+
+type Position{
+    id: Int,
+    type: PositionType
+    details: PositionDetails
+}
+
+enum PositionType {
+    DEVELOPER, PRODUCT, PEOPLE
+}
+
+enum  PositionDetails {
+    BACK_END, FRONT_END, MOBILE, RECRUITING
+}

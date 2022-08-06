@@ -1,0 +1,9 @@
+type Query {
+    members: [Member]
+    member(id: Int!): Member
+
+    products: [Product]
+    product(id: Int!): Product
+
+    exception: Boolean
+}

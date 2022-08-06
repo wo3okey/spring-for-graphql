@@ -1,0 +1,32 @@
+type Product {
+    common: ProductCommon,
+    transaction: ProductTransaction,
+    brand: ProductBrand,
+    image: ProductImage,
+    inspection: ProductInspection
+}
+
+type ProductCommon {
+    title: String,
+    description: String
+}
+
+type ProductTransaction {
+    price: Int,
+    deliveryYN: Boolean
+}
+
+type ProductBrand {
+    category: String,
+    brand: String
+}
+
+type ProductImage {
+    imgCnt: Int,
+    imgUrl: String
+}
+
+type ProductInspection{
+    insPid: Int,
+    modelId: Int
+}

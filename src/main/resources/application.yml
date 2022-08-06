@@ -1,0 +1,11 @@
+spring:
+  graphql:
+    path: "/wookey" #default=/graphql
+    graphiql:
+      enabled: true
+      path: "/wookey-test" #default=/graphiql
+
+    schema:
+      printer:
+        enabled: true
+      locations: "classpath:/graphql/**/"

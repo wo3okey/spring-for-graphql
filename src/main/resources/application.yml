@@ -1,9 +1,9 @@
 spring:
   graphql:
-    path: "/wookey" #default=/graphql
+    path: "/wookey"
     graphiql:
       enabled: true
-      path: "/wookey-test" #default=/graphiql
+      path: "/wookey-graphiql"
 
     schema:
       printer:

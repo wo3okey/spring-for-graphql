@@ -1,4 +1,4 @@
-package com.wookey.dev.graphql.product.infra
+package com.wookey.dev.graphql.product
 
 import java.math.BigDecimal
 

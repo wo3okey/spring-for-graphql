@@ -1,8 +1,6 @@
 package com.wookey.dev.graphql.product
 
 import com.wookey.dev.graphql.CustomException
-import com.wookey.dev.graphql.product.infra.Product
-import com.wookey.dev.graphql.product.infra.ProductRepository
 import org.springframework.stereotype.Service
 
 @Service
@@ -18,7 +16,7 @@ class ProductService(
     }
 
     fun exception(): Boolean {
-        throw CustomException("일부러 npe 발생시키기")
+        throw CustomException("custom error 발생시키기")
 
         return false
     }

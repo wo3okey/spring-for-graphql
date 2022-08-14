@@ -1,10 +1,10 @@
-package com.wookey.dev.graphql.member.infra
+package com.wookey.dev.graphql.member
 
 import org.springframework.stereotype.Repository
 
 @Repository
 class MemberRepository {
-    val members = listOf(
+    var members = mutableListOf(
         Member(
             id = 0,
             name = "안형욱",
@@ -52,4 +52,11 @@ class MemberRepository {
     fun findAll() = members
 
     fun findById(id: Int) = members.first { it.id == id }
+
+    // @Transactional
+    fun save(member: Member): Member {
+        members.add(member)
+
+        return member
+    }
 }

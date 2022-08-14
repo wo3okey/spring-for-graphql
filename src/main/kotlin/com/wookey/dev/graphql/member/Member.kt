@@ -1,11 +1,11 @@
-package com.wookey.dev.graphql.member.infra
+package com.wookey.dev.graphql.member
 
 class Member(
     val id: Int,
     val name: String,
     val nickName: String,
-    val team: Team,
-    val position: Position
+    val team: Team? = null,
+    val position: Position? = null
 )
 
 class Team(

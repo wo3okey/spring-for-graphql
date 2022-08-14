@@ -1,6 +1,5 @@
 package com.wookey.dev.graphql.product
 
-import com.wookey.dev.graphql.product.infra.Product
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.stereotype.Controller
 

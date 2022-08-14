@@ -1,13 +1,19 @@
 type Member {
-    id: Int,
-    name: String,
-    nickName: String,
+    id: Int!,
+    name: String!,
+    nickName: String!,
     team: Team,
     position: Position
 }
 
+input MemberRequest {
+    id: Int!,
+    name: String!,
+    nickName: String!
+}
+
 type Team{
-    id: Int,
+    id: Int!,
     name: TeamName,
     group: Group
 }
@@ -21,7 +27,7 @@ enum Group {
 }
 
 type Position{
-    id: Int,
+    id: Int!,
     type: PositionType
     details: PositionDetails
 }
